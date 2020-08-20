@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  </head>
+  <body onload="loadDb()">
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Olá, cadastre um novo usuário
+      </h1>
+      <p class="subtitle">
+        Preencha o formulário abaixo e clique em <strong>Enviar</strong>!
+      </p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+    <div class="columns" >
+        <div class="column is-three-fifths is-offset-one-fifth" >
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+            onload="if(submitted) {window.location='./'}"></iframe> 
+            <form onsubmit="handleForm()" 
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScbB9zTTtbDFe8Somupv7PGE_7DqKr69rVArSGustRvV_oWkA/formResponse"
+            target="hidden_iframe"
+            method="POST"
+            id="mG61Hd">
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                <input class="input" type="text" placeholder="Text input" name="entry.2145474445">
+                </div>
+            </div>
+            
+            <div class="field">
+                <label class="label">Username</label>
+                <div class="control has-icons-left has-icons-right">
+                <input class="input" type="text" placeholder="Text input" name="entry.1069928146">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                </span>
+                <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                </span>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                <input class="input" type="email" placeholder="Email input" name="entry.1031663111">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-small is-right">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </span>
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                <button type="submit" class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                <button class="button is-link is-light">Cancel</button>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+    </div>
+  </section>
+
+  <section id="section"class="section" style="display: flex; flex-wrap: wrap;">
+    
+  </section>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="./script.js"></script>
+  </body>
+</html>
