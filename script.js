@@ -1,9 +1,10 @@
 var section = document.getElementById("section")
 
 //  Iniciando com a requisição ao carregar a página:
-
+function handleForm(){
+  window.location='/'
+}
 function loadDb(){
-console.log('estou dentro do loadDb')
 // Usable variables:
   
   let result;
@@ -65,14 +66,15 @@ function printUsers(qty){
       .getElementById('section')
       .firstChild);
     }
-    for(i=0 ; i < qty ; i++){
+    for(i=1 ; i < qty ; i++){
 
 
-          auxUsers = auxUsers +`<div class="card" style=" margin: 20px; ">
+          auxUsers =`<div class="card" style=" margin: 20px; ">
           <header class="card-header">
             <p class="card-header-title">
             ${users[i].name}
             </p>
+            <span class="mt-2">#${i}</span>
             <a href="#" class="card-header-icon" aria-label="more options">
               <span class="icon">
                 <i class="fas fa-angle-down" aria-hidden="true"></i>
@@ -91,7 +93,7 @@ function printUsers(qty){
             <a href="#" class="card-footer-item">Edit</a>
             <a href="#" class="card-footer-item">Delete</a>
           </footer>
-          </div>`
+          </div>` +  auxUsers
       
     }
 }

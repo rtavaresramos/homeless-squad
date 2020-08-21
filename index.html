@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Bulma!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body onload="loadDb()">
   <section class="section">
@@ -21,8 +22,8 @@
     <div class="container">
     <div class="columns" >
         <div class="column is-three-fifths is-offset-one-fifth" >
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
-            onload="if(submitted) {window.location='./'}"></iframe> 
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+          onload="if(submitted) {window.location='./'}"></iframe> 
             <form onsubmit="handleForm()" 
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScbB9zTTtbDFe8Somupv7PGE_7DqKr69rVArSGustRvV_oWkA/formResponse"
             target="hidden_iframe"
@@ -31,14 +32,14 @@
             <div class="field">
                 <label class="label">Name</label>
                 <div class="control">
-                <input class="input" type="text" placeholder="Text input" name="entry.2145474445">
+                <input class="input" type="text" placeholder="Text input" name="entry.2145474445" required>
                 </div>
             </div>
             
             <div class="field">
                 <label class="label">Username</label>
                 <div class="control has-icons-left has-icons-right">
-                <input class="input" type="text" placeholder="Text input" name="entry.1069928146">
+                <input class="input" type="text" placeholder="Text input" name="entry.1069928146" required>
                 <span class="icon is-small is-left">
                     <i class="fas fa-user"></i>
                 </span>
@@ -51,7 +52,7 @@
             <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left has-icons-right">
-                <input class="input" type="email" placeholder="Email input" name="entry.1031663111">
+                <input class="input" type="email" placeholder="Email input" name="entry.1031663111" required>
                 <span class="icon is-small is-left">
                     <i class="fas fa-envelope"></i>
                 </span>
@@ -75,8 +76,12 @@
     </div>
   </section>
 
-  <section id="section"class="section" style="display: flex; flex-wrap: wrap;">
-    
+  <section class="section" >
+    <div class="columns">
+      <div id="section"class="container column is-half">
+        
+      </div>
+    </div>
   </section>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="./script.js"></script>
