@@ -8,3 +8,6 @@
 --dark: grey;
 --text: darkgrey;
 }
+body{
+    word-break: break-all;
+}
