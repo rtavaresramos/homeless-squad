@@ -186,7 +186,7 @@ setTimeout(() => {
   
   document.getElementById('edit-modal').innerHTML = `<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
   onload="if(submitted) {window.location='./#user-${e}'}"></iframe> 
-    <form id="formId" onsubmit="handleForm()" 
+    <form onsubmit="handleForm()" 
     action="${ newURL }"
     target="hidden_iframe"
     method="POST"
@@ -234,10 +234,6 @@ setTimeout(() => {
     </div>
   </form>`
 
-
-  document.getElementById('formId').addEventListener('focusout', ()=>{
-    closeModal()
-  })
 })}
 
 function loadDb(){
