@@ -61,7 +61,11 @@ var paramsQty = 5
   
 
   document.getElementById('edit-modal').style.display = 'flex'
+<<<<<<< HEAD
   // document.getElementById('edit-modal').style.opacity = 0
+=======
+  document.getElementById('edit-modal').style.opacity = 0
+>>>>>>> 781b6f455f7508ef86ceeacfa3a20d2edcfd7ec5
 
 
   let newURL = `${users[e].editUrl.substring(0,29)}/u/0/${users[e].editUrl.substring(30,91)}formResponse${users[e].editUrl.substring(99)}`
@@ -126,7 +130,11 @@ function handleEditForms(e){
 // Usable variables:
   
 let result;
+<<<<<<< HEAD
 var paramsQty = 5
+=======
+var paramsQty = pages
+>>>>>>> 781b6f455f7508ef86ceeacfa3a20d2edcfd7ec5
 
 // Objects:
 
@@ -174,10 +182,15 @@ var paramsQty = 5
         result[count+4]
      )}
   
+<<<<<<< HEAD
 
+=======
+setTimeout(() => {
+>>>>>>> 781b6f455f7508ef86ceeacfa3a20d2edcfd7ec5
   
   document.getElementById('edit-modal').style.display = 'flex'
 
+}, 750);
 
 
   let newURL = `${users[e].editUrl.substring(0,29)}/u/0/${users[e].editUrl.substring(30,91)}formResponse${users[e].editUrl.substring(99)}`
