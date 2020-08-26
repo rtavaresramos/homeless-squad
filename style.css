@@ -11,3 +11,22 @@
 body{
     word-break: break-all;
 }
+#edit-modal{
+    top: 0;
+    z-index: 50;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.5);
+    transition: 1s ease-in-out;
+}
+#edit-modal form{
+    background: #fff;
+    width: 70%;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 2px #000;
+}

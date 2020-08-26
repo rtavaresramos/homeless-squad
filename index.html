@@ -26,21 +26,21 @@
           <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
           onload="if(submitted) {window.location='./'}"></iframe> 
             <form onsubmit="handleForm()" 
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScbB9zTTtbDFe8Somupv7PGE_7DqKr69rVArSGustRvV_oWkA/formResponse"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdza2ZksR58Y0rflKA6m3dFfSdQhlxCSjQ1-xBeXaHIBnUJyw/formResponse"
             target="hidden_iframe"
             method="POST"
             id="mG61Hd">
             <div class="field">
                 <label class="label">Name</label>
                 <div class="control">
-                <input class="input" type="text" placeholder="Text input" name="entry.2145474445" required>
+                <input class="input" type="text" placeholder="Text input" name="entry.1696280753" required>
                 </div>
             </div>
             
             <div class="field">
                 <label class="label">Username</label>
                 <div class="control has-icons-left has-icons-right">
-                <input class="input" type="text" placeholder="Text input" name="entry.1069928146" required>
+                <input class="input" type="text" placeholder="Text input" name="entry.954027946" required>
                 <span class="icon is-small is-left">
                     <i class="fas fa-user"></i>
                 </span>
@@ -53,7 +53,7 @@
             <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left has-icons-right">
-                <input class="input" type="email" placeholder="Email input" name="entry.1031663111" required>
+                <input class="input" type="email" placeholder="Email input" name="entry.829195258" required>
                 <span class="icon is-small is-left">
                     <i class="fas fa-envelope"></i>
                 </span>
@@ -65,14 +65,11 @@
 
             <div class="field is-grouped">
                 <div class="control">
-                <button type="submit" class="button is-link">Submit</button>
-                </div>
-                <div class="control">
-                <button class="button is-link is-light">Cancel</button>
+                <button type="submit" class="button is-link">Cadastrar</button>
                 </div>
             </div>
+          </form>
         </div>
-        </form>
     </div>
     </div>
   </section>
@@ -90,7 +87,15 @@
       </div>
     </div>
   </section>
+
+  <!--  -->
+  <section id="edit-modal" class="section" onload="closeModal()">
+
+    
+
+  </section>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="./script.js"></script>
+  <script src="./modal.js"></script>
   </body>
 </html>
