@@ -11,7 +11,7 @@ function handleDeleteUser(e){
 // Usable variables:
   
 let result;
-var paramsQty = pages
+var paramsQty = 5
 
 // Objects:
 
@@ -61,7 +61,7 @@ var paramsQty = pages
   
 
   document.getElementById('edit-modal').style.display = 'flex'
-  document.getElementById('edit-modal').style.opacity = 0
+  // document.getElementById('edit-modal').style.opacity = 0
 
 
   let newURL = `${users[e].editUrl.substring(0,29)}/u/0/${users[e].editUrl.substring(30,91)}formResponse${users[e].editUrl.substring(99)}`
@@ -126,7 +126,7 @@ function handleEditForms(e){
 // Usable variables:
   
 let result;
-var paramsQty = pages
+var paramsQty = 5
 
 // Objects:
 
@@ -141,7 +141,7 @@ var paramsQty = pages
     }
   
   
-      const arrayUsers =  fetch(
+      fetch(
           "https://spreadsheets.google.com/feeds/cells/1WxMXjI2m_fEQ0zZ7pTpLwcJGEixCrM3N7r7s-q4skgE/1/public/full?alt=json"
         )
           .then(function(res){ 
@@ -174,11 +174,11 @@ var paramsQty = pages
         result[count+4]
      )}
   
-setTimeout(() => {
+
   
   document.getElementById('edit-modal').style.display = 'flex'
 
-}, 750);
+
 
   let newURL = `${users[e].editUrl.substring(0,29)}/u/0/${users[e].editUrl.substring(30,91)}formResponse${users[e].editUrl.substring(99)}`
   
