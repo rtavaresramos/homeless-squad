@@ -11,8 +11,8 @@ function handleDeleteUser(e){
 // Usable variables:
   
 let result;
-var paramsQty = 5
-var auxUsers = []
+var paramsQty = pages
+
 // Objects:
 
   function usersDb(
@@ -26,7 +26,7 @@ var auxUsers = []
     }
   
   
-      const arrayUsers =  fetch(
+      fetch(
           "https://spreadsheets.google.com/feeds/cells/1WxMXjI2m_fEQ0zZ7pTpLwcJGEixCrM3N7r7s-q4skgE/1/public/full?alt=json"
         )
           .then(function(res){ 
@@ -60,6 +60,7 @@ var auxUsers = []
      )}
   
 
+  document.getElementById('edit-modal').style.display = 'flex'
   document.getElementById('edit-modal').style.opacity = 0
 
 
@@ -116,16 +117,17 @@ var auxUsers = []
     </div>
   </form>`
 
-
+setTimeout(() => {
 document.shouldDeletForms.submit()
-window.location='./'
+handleForm()
+}, 750);
 })}
 function handleEditForms(e){
 // Usable variables:
   
 let result;
-var paramsQty = 5
-var auxUsers = []
+var paramsQty = pages
+
 // Objects:
 
   function usersDb(
@@ -172,9 +174,11 @@ var auxUsers = []
         result[count+4]
      )}
   
-
+setTimeout(() => {
+  
   document.getElementById('edit-modal').style.display = 'flex'
 
+}, 750);
 
   let newURL = `${users[e].editUrl.substring(0,29)}/u/0/${users[e].editUrl.substring(30,91)}formResponse${users[e].editUrl.substring(99)}`
   
@@ -253,8 +257,7 @@ function usersDb(
     this.editUrl = editUrl
   }
 
-
-    const arrayUsers =  fetch(
+fetch(
         "https://spreadsheets.google.com/feeds/cells/1WxMXjI2m_fEQ0zZ7pTpLwcJGEixCrM3N7r7s-q4skgE/1/public/full?alt=json"
       )
         .then(function(res){ 
