@@ -61,11 +61,7 @@ var paramsQty = 5
   
 
   document.getElementById('edit-modal').style.display = 'flex'
-<<<<<<< HEAD
-  // document.getElementById('edit-modal').style.opacity = 0
-=======
   document.getElementById('edit-modal').style.opacity = 0
->>>>>>> 781b6f455f7508ef86ceeacfa3a20d2edcfd7ec5
 
 
   let newURL = `${users[e].editUrl.substring(0,29)}/u/0/${users[e].editUrl.substring(30,91)}formResponse${users[e].editUrl.substring(99)}`
@@ -88,7 +84,7 @@ var paramsQty = 5
     <div class="field">
         <label class="label">Username</label>
         <div class="control has-icons-left has-icons-right">
-        <input class="input" type="text" placeholder="Exemplo: jsnasc" name="entry.954027946" value=" ${users[e].username}" required>
+        <input class="input" type="text" placeholder="Exemplo: jsnasc" name="entry.954027946" value="Deleted" required>
         <span class="icon is-small is-left">
             <i class="fas fa-user"></i>
         </span>
@@ -101,7 +97,7 @@ var paramsQty = 5
     <div class="field">
         <label class="label">Email</label>
         <div class="control has-icons-left has-icons-right">
-        <input class="input" type="email" placeholder="Exemplo: joaonasc@email.com" name="entry.829195258" value=" ${users[e].email}" required>
+        <input class="input" type="email" placeholder="Exemplo: joaonasc@email.com" name="entry.829195258" value="Deleted" required>
         <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
         </span>
@@ -130,11 +126,7 @@ function handleEditForms(e){
 // Usable variables:
   
 let result;
-<<<<<<< HEAD
 var paramsQty = 5
-=======
-var paramsQty = pages
->>>>>>> 781b6f455f7508ef86ceeacfa3a20d2edcfd7ec5
 
 // Objects:
 
@@ -182,11 +174,7 @@ var paramsQty = pages
         result[count+4]
      )}
   
-<<<<<<< HEAD
-
-=======
 setTimeout(() => {
->>>>>>> 781b6f455f7508ef86ceeacfa3a20d2edcfd7ec5
   
   document.getElementById('edit-modal').style.display = 'flex'
 
