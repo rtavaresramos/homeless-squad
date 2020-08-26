@@ -2,7 +2,9 @@ var section = document.getElementById("section")
 
 //  Iniciando com a requisição ao carregar a página:
 function handleForm(){
-  window.location='/'
+  setTimeout(() => {
+    window.location='/'
+  }, 750);
 }
 function closeModal(){
   document.getElementById('edit-modal').style.display = 'none'
@@ -117,10 +119,9 @@ var paramsQty = 5
     </div>
   </form>`
 
-setTimeout(() => {
 document.shouldDeletForms.submit()
 handleForm()
-}, 750);
+
 })}
 function handleEditForms(e){
 // Usable variables:
