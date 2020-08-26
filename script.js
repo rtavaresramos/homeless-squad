@@ -69,7 +69,7 @@ function printUsers(qty){
     for(i=1 ; i < qty ; i++){
 
 
-          auxUsers =`<div class="card" style=" margin: 20px; ">
+          auxUsers =  auxUsers + `<div class="card" style=" margin: 20px; ">
           <header class="card-header">
             <p class="card-header-title">
             ${users[i].name}
@@ -93,7 +93,7 @@ function printUsers(qty){
             <a href="#" class="card-footer-item">Edit</a>
             <a href="#" class="card-footer-item">Delete</a>
           </footer>
-          </div>` +  auxUsers
+          </div>`
       
     }
 }
