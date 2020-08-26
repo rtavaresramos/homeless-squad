@@ -77,14 +77,14 @@ var paramsQty = pages
     <div class="field">
         <label class="label">Name</label>
         <div class="control">
-        <input class="input" type="text" placeholder="Text input" name="entry.1696280753" value="Deleted" required>
+        <input class="input" type="text" placeholder="Exemplo: José Nascimento" name="entry.1696280753" value="Deleted" required>
         </div>
     </div>
     
     <div class="field">
         <label class="label">Username</label>
         <div class="control has-icons-left has-icons-right">
-        <input class="input" type="text" placeholder="Text input" name="entry.954027946" value=" ${users[e].username}" required>
+        <input class="input" type="text" placeholder="Exemplo: jsnasc" name="entry.954027946" value=" ${users[e].username}" required>
         <span class="icon is-small is-left">
             <i class="fas fa-user"></i>
         </span>
@@ -97,7 +97,7 @@ var paramsQty = pages
     <div class="field">
         <label class="label">Email</label>
         <div class="control has-icons-left has-icons-right">
-        <input class="input" type="email" placeholder="Email input" name="entry.829195258" value=" ${users[e].email}" required>
+        <input class="input" type="email" placeholder="Exemplo: joaonasc@email.com" name="entry.829195258" value=" ${users[e].email}" required>
         <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
         </span>
@@ -193,14 +193,14 @@ setTimeout(() => {
     <div class="field">
         <label class="label">Name</label>
         <div class="control">
-        <input class="input" type="text" placeholder="Text input" name="entry.1696280753" value=" ${users[e].name}" required>
+        <input class="input" type="text" placeholder="Exemplo: José Nascimento" name="entry.1696280753" value=" ${users[e].name}" required>
         </div>
     </div>
     
     <div class="field">
         <label class="label">Username</label>
         <div class="control has-icons-left has-icons-right">
-        <input class="input" type="text" placeholder="Text input" name="entry.954027946" value=" ${users[e].username}" required>
+        <input class="input" type="text" placeholder="Exemplo: jsnasc" name="entry.954027946" value=" ${users[e].username}" required>
         <span class="icon is-small is-left">
             <i class="fas fa-user"></i>
         </span>
@@ -213,7 +213,7 @@ setTimeout(() => {
     <div class="field">
         <label class="label">Email</label>
         <div class="control has-icons-left has-icons-right">
-        <input class="input" type="email" placeholder="Email input" name="entry.829195258" value=" ${users[e].email}" required>
+        <input class="input" type="email" placeholder="Exemplo: joaonasc@email.com" name="entry.829195258" value=" ${users[e].email}" required>
         <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
         </span>
