@@ -1,16 +1,4 @@
-:root{
-    --primary: turquoise;
---link: red;
---info: cyan;
---success: green;
---warning: yellow;
---danger: red;
---dark: grey;
---text: darkgrey;
-}
-body{
-    word-break: break-all;
-}
+
 #edit-modal{
     top: 0;
     z-index: 50;
@@ -29,4 +17,13 @@ body{
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 0 15px 2px #000;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+p{
+   
 }
