@@ -91,7 +91,7 @@ function loadDb(){
                   <div class="media-content">
                     <p class="title name">${users[i].name}</p>
                     <a href="${users[i].linkedin}" target="_blank"><i class="mx-1 fab fa-linkedin fa-2x"></i></a>
-                    <a href="${users[i].githube}" target="_blank"><i class="mx-1 fab fa-github fa-2x"></i></a>
+                    <a href="${users[i].github}" target="_blank"><i class="mx-1 fab fa-github fa-2x"></i></a>
                   </div>
                 </div>
                 <p class="title is-4">
