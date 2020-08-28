@@ -47,12 +47,20 @@ a{
 }
 
 #section .card{
-    max-width: 320px;
-    width: 100%;
+    max-width: 400px!important;
+    width: 100%!important;
     margin: 1.2rem;
 }
 .name{
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 1.7rem!important;
+}
+
+
+@media screen and (max-width: 450px){
+    #section{
+    width: 300px;
+    margin: 0;
+    }
 }
