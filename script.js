@@ -55,6 +55,7 @@ function loadDb(){
         result[count+7],
      )}
     
+
     
     // Function which print users' users on the screen:
     
@@ -79,7 +80,6 @@ function loadDb(){
               if(users[i].name!='Deleted'){
                 
                 auxUsers = `
-                <div class="container column is-one-third">
                 <div class="card">
               <div class="card-image">
                 <figure class="image is-4by3">
@@ -89,7 +89,7 @@ function loadDb(){
               <div class="card-content">
                 <div class="media">
                   <div class="media-content">
-                    <p class="title ">${users[i].name}</p>
+                    <p class="title name">${users[i].name}</p>
                     <a href="${users[i].linkedin}" target="_blank"><i class="mx-1 fab fa-linkedin fa-2x"></i></a>
                     <a href="${users[i].githube}" target="_blank"><i class="mx-1 fab fa-github fa-2x"></i></a>
                   </div>
@@ -107,7 +107,6 @@ function loadDb(){
                 ${users[i].teach}
                 </div>
               </div>
-            </div>
             </div>
             `+ auxUsers }
           

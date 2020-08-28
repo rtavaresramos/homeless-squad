@@ -24,8 +24,35 @@ a{
     color: #313131;
 }
 
-.homeless__container{
-    max-width: 1240px;
+.head-title{
+    display: flex;
+    justify-content: flex-start;
+}
+.section{
+    text-align: start;
+}
+.text-center{
+    text-align: center;
+}
+.users-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#section{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 0 auto;
+}
+
+#section .card{
+    max-width: 320px;
     width: 100%;
-    margin: 0 auto!important;
+    margin: 1.2rem;
+}
+.name{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.7rem!important;
 }
