@@ -25,7 +25,7 @@ function loadDb(){
             .then(function(res){ 
               return res.json()})
             .then(function(jsonRes){
-              result = jsonRes
+              result = jsonRes.teamMembers
            
     // Variables which depends from the response:
     var users = []
