@@ -20,12 +20,12 @@ function loadDb(){
       }
     
     fetch(
-            "https://spreadsheets.google.com/feeds/cells/1WxMXjI2m_fEQ0zZ7pTpLwcJGEixCrM3N7r7s-q4skgE/1/public/full?alt=json"
+            "https://api.sheety.co/87fded60075717dd3fe8911f8657cc89/homelessSquad/teamMembers"
           )
             .then(function(res){ 
               return res.json()})
             .then(function(jsonRes){
-              result = jsonRes.feed.entry.map((row)=> row.content["$t"])  
+              result = jsonRes
            
     // Variables which depends from the response:
     var users = []
